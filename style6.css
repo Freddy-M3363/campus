@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    outline: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.left{
+    width: 17%;
+    overflow-x: scroll;
+    background: #3a3636;
+    position: fixed;
+    height: 100dvh;
+    height: 100vh;
+}
+.hao{
+    position: relative;
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+p{
+    display: inline;
+    color: rgb(255, 255, 255);
+}
+
+.hao img{
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px black solid;
+    object-position: center;
+    object-fit: cover;
+}
+
+.name img{
+    object-fit: cover;
+    object-position: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.group img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px black solid;
+    object-position: center;
+    object-fit: cover;
+}
+
+
+.left-hr{
+    width: 100%;
+    height: 1px;
+    margin-left: 0;
+}
+a{
+    text-decoration: none;
+    color: rgba(230, 229, 217, 0.911);
+}
+#emailAddress{
+    border: 0;
+    background-color: rgb(8, 252, 252);
+    text-transform:capitalize ;
+    border-radius: 5px;
+}
+#emailAddress option{
+    color: aliceblue;
+    background: green;
+    font-size: 22px;
+}
+
+.list{
+    color: #e6d0d0;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    height: 30vh;
+    margin-bottom: 10px;
+}
+table, td, th{
+    border: 1px solid #000;
+    justify-content: center;
+    align-content: center;
+   
+}
+td, th{
+    text-align: center;
+}
+
+td:hover, th:hover{
+    color: rgb(17, 0, 255);
+}
+
+.left .emails::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: burlywood;
+}
+
+.left .emails:hover::-webkit-scrollbar-thumb{
+    background: #ccc;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    margin-top: 2px;
+    align-items: right;
+    justify-content: space-between;
+    width: 80%;
+    display: inline;
+}
+
+.user1{
+    border: 0.5px solid black;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.6);
+    height: 18vh;
+    width: 90%;
+    visibility: visible;
+}
+
+input{
+    border: none;
+    padding-left: 5px;
+    line-height: 20px;
+    height: 25px;
+    border-radius: 19px;
+    outline: none;
+    background: rgb(209, 209, 199);
+    font-size: 1em;
+}
+
+.nav_b{
+    place-items: center;
+    display: -webkit-flex;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    
+}
+.nav_b img{
+    margin-top: 0px;
+}
+
+.search1{
+    margin-left: 2px;
+
+}
+.search1::placeholder{
+    font-size: 0.8em;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+button{
+    border: #000 solid 1px;
+    background: blue;
+    color: aliceblue;
+    border-radius: 5px;
+    position: absolute;
+
+}
+#dashboard{
+    height: 103vh;
+    margin-top: 20px;
+}
+.worker{
+    
+    height: 150px;
+    width: 90%;
+    border: 1px rgba(0, 0, 0, 0.6) solid;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.worker hr{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 40px;
+   
+}
+.worker h6{
+    margin-left: 30px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.worker span{
+    width: 20px;
+    margin-left: 20px;
+    text-decoration: underline green;
+}
+.manager_m{
+    line-height: 30px;
+    justify-self: baseline;
+    display: inline;
+}
+
+select{
+    cursor: pointer;
+}
+.address{
+    background: blue;
+    cursor: pointer;
+}
+
+
+.nav{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.option{
+    position: abosolute;
+
+    margin-top: 50px;
+}
+
+.add{
+    border-radius: 50%;
+    height: 24px;
+    width: 48px;
+    font-size: 24px;
+    color: #000;
+    background-color: #fff;
+
+}
+
+button:hover{
+    height: 30px;
+    width: 150px;
+    background: #000;
+    position: absolute;
+}
