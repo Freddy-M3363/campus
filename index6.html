@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style6.css">
+    <script src="script6.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="left">
+        <div class="hao">
+
+          <i class="fa-solid fa-house"></i>
+          <p class="nyumba">NYUMBA YANGU</p>
+        </div> 
+        <hr class="left-hr">
+        <div class="name">
+         <img src="images/me.jpg"> 
+         <P class="PROFILE">fredrick</P>
+        </div>
+        <hr class="left-hr"><br>
+        <div class="dashbord">
+            <a href="#dashbord">dashboard</a><br>
+            <p class="access">Authorization and Authentication</p>
+        </div><br><br>
+        <div class="group">
+            <img src="images/group.jpg" alt="">
+            <p class="Groups">Groups</p><br><br>
+        </div>
+        <div>
+            <p>accounts</p><br>
+            <select name="emails" id="emailAddress">
+                <option value="fredrickmwaura@gmail.com  &nbsp;&nbsp;&nbsp;">fredrickmwaura@gmail.com&nbsp;&nbsp;</option>
+                <option value="mwaurafred@gmail.com">mwaurafred@gmail.com</option>
+                <option value="mwangi@gmail.com">mwangi@gmail.com</option>
+                <option value="fredrick@gmail.com">fredrick@gmail.com</option>
+                <option value="freddy@gmail.com">freddy@gmail.com</option>
+                <option value="mwaura@gmail.com">mwaura@gmail.com</option>
+
+            </select>
+        </div><br>
+        
+        <p>accounts</p><br>
+        <ol class="list">
+            <li>manager</li>
+            <li>profile</li>
+            <li>tenant</li>
+            <li>user</li>
+
+        </ol><br>
+        <p>core</p><br>
+
+        <a href="#">archieve email from</a>
+
+    </section>
+
+
+    <!----------------------------main------------------------>
+
+    <section class="right">
+        <div class="dashboard" id="dashboard">
+          <div class="nav_b">
+            <i class="fa-solid fa-bars"></i>
+            <input type="search" class="search1" placeholder="search here...">
+          </div>
+          <div class="clas">
+            <div class="worker">
+                <h6>user metrics</h6>
+                <hr>
+                <span>Total Metrics:</span>
+            </div>
+            <div class="worker" id="manager_m">
+                <h6>managers metrics:</h6>
+                <hr>
+                <span>total managers:</span>&nbsp;
+                <span>managers approved:</span>&nbsp;&nbsp;&nbsp;
+                <span>managers <span class="pending">pending approval:</span></span>&nbsp;
+            </div>
+            <div class="worker">
+                <h6>tenants metrics</h6>
+                <hr>
+                <span>total tenants:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>tenants moved in:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>tenants moved:</span>
+            </div>
+          </div>
+
+            
+        </div>
+
+        <div class="emailAdressses" id="email Adresses">
+            <div class="option">
+                <select name="primary">
+                    <option value="mwangi@gmail.com">mwangi@gmail.com</option>
+                    <option value="john@gmail.com">john@gmail.com</option>
+                    <option value="hanti@gmail.com">hanti@gmail.com</option>
+                    <option value="peter@gmail.com">peter@gmail.com</option>
+                </select>
+                <select name="verfied" id="">
+                    <option value="jeff@gmail.com">jeff@gmail.com</option>
+                    <option value="james@gmail.com">james@gmail.com</option>
+                    <option value="thomas@gmail.com">thomas@gmail.com</option>
+                </select>
+                <input type="search" class="search1" placeholder="search here...">&nbsp;<button onclick="search()">search</button>
+                <button type="button" class="address"><span class="add">+</span>add email address</button><br><br>
+            </div>
+            <table>
+                <tr>
+                    <th>email address</th>
+                    <th>user</th>
+                    <th>primary</th>
+                    <th>verified</th>
+
+                </tr>
+                <tr>
+                    <td>mwangi@gmail.com</td>
+                    <td>mwangi</td>
+                    <td>X</td>
+                    <td>X</td>
+
+                </tr>
+                <tr>
+                    <td>james@gmail.com</td>
+                    <td>james</td>
+                    <td>X</td>
+                    <td>verfied</td>
+
+                </tr>
+                <tr>
+                    <td>john@gmail.com</td>
+                    <td>john</td>
+                    <td>X</td>
+                    <td>verfied</td>
+
+                </tr>
+            </table>
+        </div>
+        
+        
+
+
+
+
+    </section>
+
+    
+</body>
+</html>
