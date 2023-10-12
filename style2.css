@@ -7,17 +7,24 @@
     text-transform: capitalize;
     min-zoom: 100%;
     max-zoom: 150%;
+    font-family: "Gill Sans";
+    src: url("opensans.eot") format("eot"),
+    url("opensans.woff") format("woff"),
+    url("opensans.ttf") format("truetype");
 }
 
-.logo{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin: auto;
+body{
+    width: 100%;
 }
+.logo{
+    object-fit:cover   ;
+    width: 10px;
+    height: 100px;
+}
+
 a .name{
     line-height: 5px;
-    color: ##fff;
+    color: #fff;
     display: inline;
     font-weight: 900;
     font-size: 3em;
@@ -29,6 +36,7 @@ a .name{
     text-decoration: underline 8px #000;
     font-family: sans-serif;
 }
+
 nav img{
     width: 150px;
 }
@@ -36,14 +44,16 @@ nav img{
 .interface{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(45, 86, 253, 0.47),rgba(72, 107, 245, 0.47)),url(images/interface12.jpg);
+    background-image: linear-gradient(rgba(45, 86, 253, 0.67),rgba(72, 107, 245, 0.67)),url(images/interface12.jpg);
     background-position:center;
     background-size: cover;
     position:relative;
 }
 .nav-bar{
-    flex: 1;   
+    flex: 0;
+    margin-top: 30px;   
     text-align: right;
+    justify-content: flex-end;
 }
 .nav-bar ul li{
     list-style: none;
@@ -67,10 +77,12 @@ h1{
     font-size: 60px;
     font-weight: 700;
     text-align: center;
+
 }
 
 .visit{
     text-decoration: none;
+    margin-top: 100px;
     color: aliceblue;
     display: inline-block;   
     border: 1px black solid;
@@ -89,24 +101,25 @@ h1{
 a{
     display: inline;
     text-decoration: none;
-    text-align: right ;
     margin: 10px;
     color: aliceblue;
     transition-duration: 0.5s;
 }
-.nav a:link{
-    color: rgb(3, 97, 42);
+.nav{/*
+    position: absolstute;*/
+    justify-content: space-around;
+    margin: 3px;
+    
 }
- .nav:hover{
+
+ .navA:hover, .navC:hover, .navK:hover, .navB:hover{
     font-size: 120%;
     font-weight: bolder;
     text-decoration: underline;
-    color: rgb(243,245,0)
+    color: rgb(150, 224, 230);
+    position: -webkit-sticky;
  }
-a:active{
-    scrollbar-arrow-color: #09f130;
-    scroll-behavior:smooth;
-}
+
 ul{
     list-style-type: none;
 }
@@ -155,8 +168,8 @@ nav .fa{
     text-align: center;
     font-size: 40px;
     
-
 }
+
 .programmes{
    text-align: center;
    display: inline-block;
@@ -164,11 +177,12 @@ nav .fa{
    margin-top: 5%;
    justify-content: space-around;
    display: flex;
-
 }
+
 h2{
     text-decoration:underline #010c03;
 }
+
 .courses{
     flex-basis: 31%;
     background-color: #97fca8;
@@ -177,23 +191,26 @@ h2{
     padding: 25px 15px;
     transition-duration: 0.5s;
 }
+
 .courses:hover{
     background-color: #09f130;
 }
 
 .campus{
     text-align: center;
-    width: 80%;tanforduniversity@gmail.com
+    width: 80%;
     margin: auto ;
     padding: top 50px;
     margin-left: 200px;
 }
+
 .campuses{
     flex-basis: 31%;
     place-items: center;
     align-content: center;    
     text-align: center;
 }
+
 .images{
     flex-basis: 31%;
     margin-bottom: 30px;
@@ -207,9 +224,11 @@ h2{
     margin-right: 1%;
     justify-content: space-between;
 }
+
 .images img{
     width: 100%;
 }
+
 .layout{
     background:rgba(86, 207, 112, 0.04);
     width: 100%;
@@ -219,9 +238,11 @@ h2{
     top: 0;
     transition: 0.5s;
 }
+
 .layout:hover{
     background:rgba(187, 17, 116, 0.4);
 }
+
 .images h3{
     color: rgb(10, 2, 0);
     text-align: center;
@@ -235,18 +256,22 @@ h2{
     position: absolute; 
     opacity: 0;
 }
+
 .images:hover h3{
     bottom: 49%;
     opacity: 1;
 }
+
 .facility{
     width: 80%;
     text-align: center;
     margin-bottom: 160px;
 }
+
 .facility h1{
     text-align: center;
 }
+
 .facilities{
     width: 100%;
     position: relative;
@@ -259,12 +284,14 @@ h2{
     display:flex;
     justify-content: space-between;
 }
+
 .facilities-1{
     text-align: left;
     width: 20%;
     margin-top: 6%;
     flex-basis:20%;
-}    
+}  
+
 .facilities img{
     border-radius: 20px;
     width: 100%;
@@ -272,21 +299,21 @@ h2{
     margin-bottom: 90px;
     align-items: baseline;
 }
-#bus{
-    
-}
+
 .facilities-1 h3{
     font-size: 2.5em;
     margin: 25px;
     text-align: left;
     text-transform: capitalize;
 }
+
 .comments{
     position: relative;
     padding-bottom: 80px;
     margin: auto;
     width: 80%;
 }    
+
 .students{
     background-color: #e0d2ce;
     flex-basis: 44%;
@@ -302,10 +329,12 @@ h2{
     margin-left: 10px;
 
 }
+
 div h3{
     margin-top: 20px;
     text-align: center;
 }
+
 .students img{
     height: 50px;
     width: 50px;
@@ -315,6 +344,7 @@ div h3{
     display: inline;
     float: left;
 }
+
 .contact{
     color: rgba(212, 145, 184, 0.9);
     text-align: center;
@@ -328,6 +358,7 @@ div h3{
     background-size: cover;
     background-position: center;
 }
+
 .contact a{
     border: 1px #fff solid;
     box-sizing: border-box;
@@ -338,11 +369,13 @@ div h3{
     margin-top: 100px;
 
 }
+
 .contact a:hover{
     background-color: #09f130;
     border-color: #97fca8;
     color: #020202;
 }
+
 .footter{
    height: 200px;
    line-height: 1em;
@@ -351,12 +384,29 @@ div h3{
    color: rgba(0, 200, 30, 0.8);
    font-weight: 700;
 }
-div span a{
-    border:none;
-} 
+.r-footer{
+    width: 50%;
+    align-items: right;
+    position: relative;
+    right: 0;
+    margin-top: 2px;
+    align-items: right;
+    justify-content: space-between;
+    display: inline;
+    padding-right: 30px;
+}
 
-.footter ul{
-    text-align: center;
+.l-footer{
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    justify-content: space-between;
+}
+
+
+.footter ul{/*
+    text-align: center;*/
+    display: inline-block;
     display: block;
     position: relative;
     padding: 200px auto;
@@ -368,9 +418,15 @@ div span a{
     line-height: 40px;
     font-weight: 700;
 }
-.footter label{
+footer {
+    display: inline;
+    background: rgba(7, 0, 0, 0.8);
+}
+
+.footer label{
     text-decoration: underline double rgb(134, 137, 172);
 } 
+
 #email{
     text-decoration: none;
     color: aqua;
