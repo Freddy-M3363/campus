@@ -8,18 +8,42 @@
     min-zoom: 100%;
     max-zoom: 150%;
     font-family: "Gill Sans";
-    src: url("opensans.eot") format("eot"),
-    url("opensans.woff") format("woff"),
-    url("opensans.ttf") format("truetype");
+    src: url("opensans.eot") format("eot"), url("opensans.woff") format("woff"), url("opensans.ttf") format("truetype");
+}
+
+img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
 }
 
 body{
     width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 0px;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 18px;
+    background: rgb(12, 191, 236);
+}
+
+body:hover::-webkit-scrollbar-thumb{
+    background-color: #e40813;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
 }
 .logo{
     object-fit:cover   ;
-    width: 10px;
-    height: 100px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 a .name{
@@ -37,10 +61,6 @@ a .name{
     font-family: sans-serif;
 }
 
-nav img{
-    width: 150px;
-}
-
 .interface{
     min-height: 100vh;
     width: 100%;
@@ -49,12 +69,14 @@ nav img{
     background-size: cover;
     position:relative;
 }
+
 .nav-bar{
     flex: 0;
     margin-top: 30px;   
     text-align: right;
     justify-content: flex-end;
 }
+
 .nav-bar ul li{
     list-style: none;
     display: inline-block;
@@ -63,6 +85,7 @@ nav img{
     color: aliceblue;
     display: fixed;
 }
+
 .intro1{
     color: aliceblue;   
     position: absolute;
@@ -73,11 +96,15 @@ nav img{
     font-size: 24px;  
     text-align: center;
 }
+
+i{
+    visibility: hidden;
+}
+
 h1{
     font-size: 60px;
     font-weight: 700;
     text-align: center;
-
 }
 
 .visit{
@@ -94,6 +121,7 @@ h1{
     font-size: 16px;
     font-weight: 800;
 }
+
 .visit:hover{
     border: 1px magenta solid;
     background-color: magenta;
@@ -102,43 +130,98 @@ a{
     display: inline;
     text-decoration: none;
     margin: 10px;
-    color: aliceblue;
+    color: rgb(0, 255, 0);
     transition-duration: 0.5s;
 }
-.nav{/*
-    position: absolstute;*/
+.nav-bar{
+    position: absolstute;
     justify-content: space-around;
-    margin: 3px;
-    
+    margin-left: 2px;
 }
 
- .navA:hover, .navC:hover, .navK:hover, .navB:hover{
-    font-size: 120%;
-    font-weight: bolder;
-    text-decoration: underline;
-    color: rgb(150, 224, 230);
-    position: -webkit-sticky;
+ .nav:hover{
+    color: aliceblue;
+    font-weight: 900;
+    position: relative;
  }
+
+
 
 ul{
     list-style-type: none;
 }
+
+.students{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
 nav .fa{
     display: none;
 }
-@media (max-width:768px){
-    .intro1 h1{
-        font-size: 20px;
+
+@media (max-width:62em){
+    body{
+        width: 100%;
+ 
+    }
+
+    
+    .bodyb{
+        margin-left: 50px;
+    }
+
+    h1{
+        font-size: 2.0em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 1.9em;
+        font-weight: 800;
+        text-align: center;
+    }
+    h3{
+        font-size: 1.8em;
+        text-align: center;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 1.7em;
+        font-weight: 600;
+        text-align: center;
+    }
+    h5{
+        font-size: 1.6em;
+        text-align: center;
+        font-weight: 500;
+    }
+    h6{
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .students{
+       max-width: 80%;
+       height: auto;
+
     }
     .nav-bar{
-        position :absolute;
+        position :fixed;
         background: #f44336;
         text-align: left;
-        z-index: 2;
         height:100vh;
-        width:200px;
+        width:100px;
         top: 0;
-        right: -200px;
+        left: 0px;
+        margin: 0px 40px 0px 0px;
     }
     nav .fa{
         display: block;
@@ -154,11 +237,38 @@ nav .fa{
     .programmes{
         flex-direction: column;
     }
-    .contact h1{
+    h1{
         font-size: 22px;
+        text-align: center;
     }
-       
+    .campus{
+        width: 100%;
+        margin:0px ;
+    }
+   
+    .p-campus{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    footer{
+        display: block;
+        align-items: center;
+        margin: 0px;
+        float: none;
+    }
+    .r-footer{
+        display: absolute;
+        float: none;
+        margin-top: 0px;
+        text-align: center;
+    }
+    l-footer{
+        position: relative;
+        margin: 0px;
+    }
 }
+
 
 .cos-offer{
     padding-top: 100px;
@@ -178,11 +288,6 @@ nav .fa{
    justify-content: space-around;
    display: flex;
 }
-
-h2{
-    text-decoration:underline #010c03;
-}
-
 .courses{
     flex-basis: 31%;
     background-color: #97fca8;
@@ -195,14 +300,14 @@ h2{
 .courses:hover{
     background-color: #09f130;
 }
-
+/*
 .campus{
     text-align: center;
     width: 80%;
     margin: auto ;
     padding: top 50px;
     margin-left: 200px;
-}
+}*/
 
 .campuses{
     flex-basis: 31%;
@@ -268,9 +373,6 @@ h2{
     margin-bottom: 160px;
 }
 
-.facility h1{
-    text-align: center;
-}
 
 .facilities{
     width: 100%;
@@ -376,36 +478,43 @@ div h3{
     color: #020202;
 }
 
-.footter{
-   height: 200px;
-   line-height: 1em;
+.footer{
+   margin: 0px;
+   width: 100%;
+   line-height: 2em;
+   background: rgba(0,0,0,0.76);
    font-size: large;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   color: rgba(0, 200, 30, 0.8);
+   overflow-x: hidden;
+   color: rgba(13, 14, 13, 0.8);
    font-weight: 700;
+   color: #fff;
+
 }
+
+.l-footer label, .r-footer label{
+    text-decoration: underline double rgb(134, 137, 172);
+} 
+
 .r-footer{
-    width: 50%;
     align-items: right;
     position: relative;
-    right: 0;
-    margin-top: 2px;
-    align-items: right;
     justify-content: space-between;
-    display: inline;
     padding-right: 30px;
+    margin-left: 70%;
+    right: 0em;
 }
 
 .l-footer{
+    float: left;
+    margin:0 100px 0px 100px;
     position: relative;
     text-align: left;
-    padding-left: 30px;
     justify-content: space-between;
 }
 
 
-.footter ul{/*
-    text-align: center;*/
+.footter ul{
+    text-align: center;
     display: inline-block;
     display: block;
     position: relative;
@@ -418,14 +527,6 @@ div h3{
     line-height: 40px;
     font-weight: 700;
 }
-footer {
-    display: inline;
-    background: rgba(7, 0, 0, 0.8);
-}
-
-.footer label{
-    text-decoration: underline double rgb(134, 137, 172);
-} 
 
 #email{
     text-decoration: none;
